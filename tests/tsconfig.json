@@ -1,0 +1,10 @@
+{
+  // Tests run in Node (vitest), so they get Node types. Kept separate from the root
+  // tsconfig so Node's timer types do not leak into the React Native app code.
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "types": ["node"]
+  },
+  "include": ["**/*.ts", "../vitest.config.ts"],
+  "exclude": []
+}
