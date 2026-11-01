@@ -106,7 +106,8 @@ project, RevenueCat app or App Store listing; you bring your own.
 ```bash
 npm install
 cp .env.example .env          # fill in your own keys (see below)
-npm run typecheck             # tsc --noEmit, passes clean
+npm run typecheck             # tsc --noEmit (app and tests), passes clean
+npm test                      # vitest: offline unit tests, no keys or network needed
 npm run dev                   # Metro + API routes on :8081
 ```
 
@@ -147,6 +148,7 @@ lib/api.ts                       apiUrl(): the only server address the app knows
 docs/                            product/UX notes, Ripple Galaxy scoring model, screenshot
 site/                            marketing site (Vite + React)
 scripts/                         LLM provider smoke test
+tests/                           vitest: LLM fallback, score parsing, server-route and client key boundary
 firestore.rules                  per-user read/write rules
 app.config.js                    Expo config; identifiers come from env (placeholder bundle ID com.example.sayura)
 ```
