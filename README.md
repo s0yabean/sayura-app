@@ -1,5 +1,7 @@
 # Sayura: a voice-affirmation app with an LLM speech-matching loop
 
+[![CI](https://github.com/s0yabean/sayura-app/actions/workflows/ci.yml/badge.svg)](https://github.com/s0yabean/sayura-app/actions/workflows/ci.yml)
+
 Sayura was an iOS app on the App Store (the listing is no longer live). You picked or wrote an affirmation, said it
 out loud, and the app checked that what you said matched what you meant to say before counting it towards your
 streak. This repo is the full app source (Expo / React Native, about 10,800 lines of TypeScript) plus its small
